@@ -8,18 +8,19 @@
                             <div class="card-content">
                                 <h4 class="center">Admin Login</h4>
                                 <div class="section">
-                                    <?php echo form_open('Admin') ?>
+                                   
+                                    <?php echo form_open('Admin',array('id'=>'form', 'name'=>'form' )) ?>
                                     <!-- <form action="" method="post" id="form"> -->
                                         <div class="input-field">
                                             <i class="material-icons prefix">account_circle</i>
-                                            <input id="username" name="username" type="text">
+                                            <input id="username" name="username" type="text" data-parsley-required data-parsley-length="[2, 5]" data-parsley-trigger="keyup" >
                                             <label for="username">USERNAME</label>
                                         </div>
                                         <?= form_error('username') ?>
 
                                         <div class="input-field">
                                             <i class="material-icons prefix">phone</i>
-                                            <input type="text" name="password" id="password">
+                                            <input type="text" name="password" id="password" data-parsley-required data-parsley-length="[2, 5]" data-parsley-trigger="keyup">
                                             <label for="password">PASSWORD</label>
                                         </div>
                                         <?= form_error('password') ?>
@@ -47,6 +48,4 @@
             echo "<script> $(document).ready(function(){ M.toast({html:'$err_msg'}); }); </script>";
         }  
     }
-
-
 ?>

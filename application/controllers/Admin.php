@@ -3,7 +3,7 @@ class Admin extends MY_Controller
 {
     public function index()
     {
-        // $this->form_validation->set_error_delimiters('<div class="red-text text-accent-2">","</div>');
+        // $this->form_validation->set_error_delimiters('<div class="red-text text-accent-2"></div>');
         if($this->form_validation->run('admin_login_rules')){
 
             $username = $this->input->post('username');
