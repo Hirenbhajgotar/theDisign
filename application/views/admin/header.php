@@ -17,9 +17,11 @@
             <div class="nav-wrapper container">
                 <a href="<?= base_url('Admin') ?>" class="brand-logo">TheDesign</a>
                 <a href="#!" data-target="mobile_demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    
-                </ul>
+                <?php if($this->session->userdata('id')):?>
+                    <ul class="right"> 
+                        <li><a href="<?=base_url('admin/logout')?>" class="btn btn-small waves-effect waves-light">logout</a></li>
+                    </ul>
+                <?php endif; ?>
             </div>
         </nav>
     </header>
