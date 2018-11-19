@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?= base_url('/assets/css/parsley.css') ?>">
 
 </head>
-<body>
+<body class="grey lighten-4">
     <header>
         <nav>
             <div class="nav-wrapper container">

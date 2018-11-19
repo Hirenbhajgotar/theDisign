@@ -6,7 +6,7 @@
                     <div class="section">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <h4 class="center">Admin Login</h4>
+                                <h4 class="center">Login</h4>
                                 <div class="section">
                                    
                                     <?php echo form_open('Admin',array('id'=>'form', 'name'=>'form' )) ?>
@@ -27,7 +27,7 @@
                                         <!-- <input type="submit" value="LOGIN" class="btn wav"> -->
                                         <br>
                                         <button type="submit" class="btn waves-effect waves-light" name="submit" id="submit">LOGIN</button>
-                                        <a href="<?= base_url('admin/signup') ?>">Signup here</a>
+                                        New to TheDesign? <a href="<?= base_url('admin/signup') ?>">Create an account</a>
                                     <!-- </form> -->
                                     
                                 </div>
